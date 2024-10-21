@@ -19,9 +19,10 @@ for (let i = 0; i < array.length; i++) {
     const element = array[i];
     const indexC = element.charAt(0)
     
-    
+    return array
 
    
 }
 }
+const indexnames = indexArrays(names)
 console.log(indexArrays(names))
