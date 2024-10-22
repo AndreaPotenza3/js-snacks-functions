@@ -7,39 +7,28 @@ const word = 'javascript';
 
 let vocali = 0
 
-function numVocali(text) {
+function numVowels(text) {
     
     for (let i = 0; i < text.length; i++) {
-        const element = i
-        if (element === 'a' || element === 'e' || element === 'i' || element === 'o' || element === 'u'){
-            vocali++
+        const letter = text[i]
+
+
+
+        if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') {
+            vocali = vocali + 1
             
         }
-        
-        return vocali
-        
+            
     }
+
+    return vocali
+
 }
 
-const vowels = numVocali(word)
-console.log(vowels)
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
-//const vocals = numVocali(word)
-//console.log(vocals) 
-//const includeW =word.includes('a')
-//console.log(includeW)
+console.log(numVowels(word))
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
-
-
-
-//for (let index = 0; index < word.length; index++) {
-    //const element = word[index];
-    //if (element === 'a' || element === 'e' || element === 'i' || element === 'o' || element === 'u'){
-        //vocali++
-    //}
-    
-//}
-//console.log(vocali)
