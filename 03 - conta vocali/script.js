@@ -10,8 +10,10 @@ let vocali = 0
 function numVowels(text) {
     
     for (let i = 0; i < text.length; i++) {
-        const letter = text[i]
 
+        text = text.toLowerCase()
+
+        const letter = text[i]
 
 
         if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') {
